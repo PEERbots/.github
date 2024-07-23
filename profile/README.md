@@ -16,3 +16,10 @@ At Peerbots, we're building three main products available for free:
     - Still new to social robots? No problem!
     - Rely on our community of domain experts and behavior designers to get started.
     - Optionally craft your own experiences using our authoring tools.
+
+### Team
+
+We rely on our amazing team of developers and community to build the future of Peerbots:
+
+* [@johnchoi313](https://github.com/johnchoi313): Founding Developer 
+* [@sbeleidy](](https://github.com/sbeleidy)): Executive Director & Researcher
