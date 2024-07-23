@@ -22,4 +22,4 @@ At Peerbots, we're building three main products available for free:
 We rely on our amazing team of developers and community to build the future of Peerbots:
 
 * [@johnchoi313](https://github.com/johnchoi313): Founding Developer 
-* [@sbeleidy](](https://github.com/sbeleidy)): Executive Director & Researcher
+* [@sbeleidy](https://github.com/sbeleidy): Executive Director & Researcher
