@@ -1,7 +1,7 @@
 Peerbots is building a research informed social robot system for everyone. 
 Peerbots social robots are designed to be powered by experts at every step: creating, controlling, and even reviewing robot behaviors.
 
-## Products
+### Products
 
 At Peerbots, we're building three main products available for free:
 1. Robot Face: 
