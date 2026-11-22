@@ -1,0 +1,43 @@
+name: Firebase Hosting PR Preview (Fork-Safe)
+
+on:
+  workflow_call:
+    inputs:
+      project-id:
+        required: true
+        type: string
+      target:
+        required: false
+        type: string
+        default: ""
+      node-version:
+        required: false
+        type: string
+        default: "24"
+    secrets:
+      FIREBASE_SERVICE_ACCOUNT:
+        required: true
+
+jobs:
+  deploy-preview:
+    # Fork-PR guard: never attempt secret-backed preview deploys on untrusted fork PRs
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    name: Deploy Firebase Preview
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      checks: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ inputs.node-version }}
+          cache: "npm"
+      - run: npm ci && npm run build
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          projectId: ${{ inputs.project-id }}
+          target: ${{ inputs.target }}

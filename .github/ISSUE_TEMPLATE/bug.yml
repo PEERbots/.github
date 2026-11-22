@@ -1,0 +1,68 @@
+name: Bug Report
+description: Report a bug or unexpected behavior.
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please avoid posting personal emails or private user data in public issues.
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: A concise description of what you're experiencing.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: A concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps To Reproduce
+      description: Exact steps to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device (Optional — for web/mobile issues)
+      description: What device were you using?
+      options:
+        - Laptop (Windows)
+        - Laptop (Mac)
+        - Laptop (Linux)
+        - Tablet (iOS)
+        - Tablet (Android)
+        - iPhone
+        - Android Phone
+        - Other
+    validations:
+      required: false
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Browser (Optional — for web issues)
+      multiple: true
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Microsoft Edge
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional Context / Logs / Screenshots
+      description: Paste any relevant console errors, screenshots, or OS/Node/Python versions.
+    validations:
+      required: false

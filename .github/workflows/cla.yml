@@ -1,0 +1,33 @@
+name: CLA Assistant (FLA 2.0)
+
+on:
+  workflow_call:
+    secrets:
+      PERSONAL_ACCESS_TOKEN:
+        description: "PAT with repo scope to commit CLA signatures to PEERbots/.github"
+        required: true
+
+jobs:
+  cla-check:
+    name: Verify Peerbots FLA 2.0 CLA
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+      pull-requests: write
+      statuses: write
+    steps:
+      - name: CLA Assistant Lite
+        uses: contributor-assistant/github-action@v2.4.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        with:
+          path-to-signatures: "signatures/cla-signatures.json"
+          path-to-document: "https://github.com/PEERbots/.github/blob/main/CLA.md"
+          branch: "main"
+          remote-organization-name: "PEERbots"
+          remote-repository-name: ".github"
+          allowlist: "sbeleidy,dependabot[bot],github-actions[bot],google-labs-jules[bot]"
+          lock-pullrequest-aftermerge: false
+          use-dco-flag: false

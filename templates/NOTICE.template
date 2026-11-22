@@ -1,0 +1,18 @@
+<Project Name>
+Copyright (c) <FIRST_YEAR>-2026 Peerbots, Inc. (https://www.peerbots.org)
+
+This product includes software developed by Peerbots, Inc., a 501(c)(3) nonprofit
+organization.
+
+License:
+  Source code is licensed under <SPDX_IDENTIFIER> (see LICENSE).
+  Commercial dual-licenses are available from Peerbots, Inc. to support our
+  nonprofit mission: https://github.com/PEERbots/.github/blob/main/LICENSING.md
+
+Trademarks:
+  "Peerbots", the Peerbots logo, "Moddy", and the "Hugo" mascot identity are
+  trademarks of Peerbots, Inc. Open-source code licenses do not grant rights
+  to use Peerbots trademarks or imply official endorsement.
+
+Third-Party Attributions (if applicable):
+  - <Add any upstream/third-party copyright notices here>

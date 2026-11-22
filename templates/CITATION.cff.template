@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software in academic research or publications, please cite it using these metadata."
+type: software
+title: "<Project Name>"
+authors:
+  - name: "Peerbots, Inc."
+    website: "https://www.peerbots.org"
+repository-code: "https://github.com/PEERbots/<repo>"
+url: "https://www.peerbots.org"
+license: AGPL-3.0-or-later
+year: 2026
