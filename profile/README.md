@@ -32,7 +32,7 @@ Peerbots social robots are designed to keep **humans in control at every step** 
 | Repository | What It Does | Availability | License |
 | :--- | :--- | :--- | :--- |
 | [**app.peerbots.org**](https://github.com/PEERbots/app.peerbots.org) | Main Peerbots Controller & Authoring Platform | Live at [app.peerbots.org](https://app.peerbots.org) | `AGPL-3.0-or-later` |
-| [**peerbots-face**](https://github.com/PEERbots/peerbots-face) | 2D (PixiJS) & 3D (Vizij) expressive robot face engine | npm: [`@peerbots/face`](https://www.npmjs.com/package/@peerbots/face) | `LGPL-3.0-or-later` *(code)* / Hugo brand assets reserved |
+| [**peerbots-face**](https://github.com/PEERbots/peerbots-face) | 2D (PixiJS) & 3D (Vizij) expressive robot face engine | npm: [`@peerbots/face`](https://www.npmjs.com/package/@peerbots/face) | `LGPL-3.0-or-later` *(code)* / Hugo & Simple brand assets reserved |
 | [**peerbots-core**](https://github.com/PEERbots/peerbots-core) | Shared accessible UI components & Peerbots design system | npm: [`@peerbots/core`](https://www.npmjs.com/package/@peerbots/core) | `LGPL-3.0-or-later` |
 | [**peerbots-content**](https://github.com/PEERbots/peerbots-content) | Community Marketplace for robot behaviors & templates | Live at [market.peerbots.org](https://market.peerbots.org) | `AGPL-3.0-or-later` |
 | [**Moddy**](https://github.com/PEERbots/Moddy) | Programmatic 3D-printable modular robot hardware | FreeCAD + Web Designer | `AGPL-3.0-or-later` *(code)* / `CC BY-NC-SA 4.0` *(designs)* |

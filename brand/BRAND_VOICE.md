@@ -27,4 +27,4 @@
 
 ## Trademarks
 
-`Peerbots`, the Peerbots logo, `Moddy`, and the `Hugo` mascot identity are trademarks of **Peerbots, Inc.** Open-source code licenses do not grant trademark rights (see [`LICENSING.md`](../LICENSING.md)).
+`Peerbots`, the Peerbots logo, `Moddy`, and the `Hugo` and `Simple` signature face assets are trademarks and/or © **Peerbots, Inc., All Rights Reserved**. Open-source code licenses do not grant trademark or mascot rights (see [`LICENSING.md`](../LICENSING.md)).
