@@ -48,7 +48,19 @@ Peerbots social robots are designed to keep **humans in control at every step** 
 ## Community, Licensing & Getting Involved
 
 - **Questions & Ideas**: [Peerbots GitHub Discussions](https://github.com/PEERbots/.github/discussions)
-- **How to Contribute**: [Contributing Guide](../CONTRIBUTING.md) & [FLA 2.0 CLA](../CLA.md)
-- **Why We Chose Our Licenses**: [Peerbots Licensing & Trademark Policy](../LICENSING.md) *(commercial dual-licenses available to support our 501(c)(3) mission)*
+- **How to Contribute**: [Contributing Guide](../CONTRIBUTING.md) · [FLA 2.0 CLA](../CLA.md) · [QA Standards](../docs/QA_STANDARDS.md)
+- **Why We Chose Our Licenses**: [Peerbots Licensing & Trademark Policy](../LICENSING.md)
 - **Community Standards & Governance**: [Code of Conduct](../CODE_OF_CONDUCT.md) · [Governance](../GOVERNANCE.md) · [Security Policy](../SECURITY.md)
-- **Support Our Mission**: [Donate to Peerbots](https://www.peerbots.org/donate)
+
+---
+
+## Sponsors & Supporters
+
+Peerbots, Inc. is a **501(c)(3) nonprofit** (EIN `85-1894594`). Tax-deductible donations, GitHub Sponsors, commercial code licenses, and priority support agreements keep Peerbots free for schools, therapists, and families.
+
+- **[Sponsor on GitHub](https://github.com/sponsors/PEERbots)** · **[Donate at peerbots.org/donate](https://www.peerbots.org/donate)** · **[Sponsorship Tiers & Priority Support](../SPONSORSHIP.md)**
+
+### Open-Source & Nonprofit Infrastructure Supporters
+We're grateful to the platforms that support open-source nonprofits with free tooling and infrastructure:
+- **[GitHub for Nonprofits](https://socialimpact.github.com/)** — Source hosting, Actions CI, and community collaboration
+- *(Additional OSS tooling supporters — such as BrowserStack Open Source once approved — will be credited here.)*

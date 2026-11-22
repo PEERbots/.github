@@ -95,7 +95,13 @@ We welcome contributions from developers, researchers, educators, designers, and
 - **Community Standards**: [Code of Conduct](https://github.com/PEERbots/.github/blob/main/CODE_OF_CONDUCT.md)
 - **Governance**: [Peerbots Governance](https://github.com/PEERbots/.github/blob/main/GOVERNANCE.md)
 - **Security**: [Report a Vulnerability](https://github.com/PEERbots/.github/blob/main/SECURITY.md)
-- **Support Our Mission**: [Donate to Peerbots](https://www.peerbots.org/donate)
+
+## Support Peerbots & Sponsors
+
+Peerbots, Inc. is a **501(c)(3) nonprofit** (EIN `85-1894594`). Your tax-deductible donations, sponsorships, and priority support partnerships keep our hosted platform and open-source tools free for schools, therapists, and families:
+
+- **[Sponsor on GitHub](https://github.com/sponsors/PEERbots)** or **[Donate at peerbots.org/donate](https://www.peerbots.org/donate)** · [Sponsorship Tiers & Priority Support](https://github.com/PEERbots/.github/blob/main/SPONSORSHIP.md)
+- **Thank you** to our [Sponsors & Open-Source Infrastructure Supporters](https://github.com/PEERbots#sponsors--supporters) who help keep Peerbots running.
 
 ---
 

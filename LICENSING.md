@@ -31,11 +31,11 @@ We designed our licensing tiers to balance three goals:
 
 ---
 
-## Commercial Dual-Licensing
+## Commercial Software Licensing & Priority Support
 
-Want to run a proprietary hosted Peerbots deployment, integrate Peerbots into a closed-source commercial product, license the Hugo or Simple face assets, or commercially manufacture Moddy robot hardware?
+Want to run a proprietary hosted Peerbots deployment, integrate Peerbots code into a closed-source commercial product, commercially manufacture Moddy robot hardware, or arrange priority technical support and hands-on training?
 
-Peerbots, Inc. offers **commercial licenses** whose revenue directly funds our 501(c)(3) mission. Contact us at [support@peerbots.org](mailto:support@peerbots.org?subject=%5BCommercial%20License%5D%20Inquiry) or via [peerbots.org/contact](https://www.peerbots.org/contact).
+Peerbots, Inc. offers **commercial software licenses and priority support plans** whose revenue directly funds our 501(c)(3) mission *(note: the **Hugo** and **Simple** brand/face assets are reserved for Peerbots and are not licensed for arbitrary commercial brand use)*. See [`SPONSORSHIP.md`](./SPONSORSHIP.md), email [support@peerbots.org](mailto:support@peerbots.org?subject=%5BCommercial%20License%20%2F%20Support%5D%20Inquiry), or contact us at [peerbots.org/contact](https://www.peerbots.org/contact).
 
 ---
 

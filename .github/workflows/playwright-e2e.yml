@@ -1,0 +1,65 @@
+name: Playwright E2E QA
+
+on:
+  workflow_call:
+    inputs:
+      base-url:
+        description: "Target URL to test (e.g., Firebase PR preview URL or http://localhost:5173)"
+        required: true
+        type: string
+      node-version:
+        required: false
+        type: string
+        default: "24"
+      playwright-args:
+        description: "Optional extra arguments passed to npx playwright test (e.g., --grep @p0)"
+        required: false
+        type: string
+        default: ""
+      run-browserstack:
+        description: "Run via BrowserStack Open Source real-device cloud (requires approved org secrets)"
+        required: false
+        type: boolean
+        default: false
+    secrets:
+      BROWSERSTACK_USERNAME:
+        required: false
+      BROWSERSTACK_ACCESS_KEY:
+        required: false
+
+jobs:
+  playwright-e2e:
+    name: Playwright E2E
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ inputs.node-version }}
+          cache: "npm"
+      - run: npm ci
+      - name: Install Playwright browsers
+        if: ${{ !inputs.run-browserstack }}
+        run: npx playwright install --with-deps chromium webkit
+      - name: Run Playwright E2E tests
+        env:
+          PLAYWRIGHT_BASE_URL: ${{ inputs.base-url }}
+          BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+          BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+        run: |
+          if [ "${{ inputs.run-browserstack }}" = "true" ]; then
+            npx browserstack-node-sdk playwright test ${{ inputs.playwright-args }}
+          else
+            npx playwright test ${{ inputs.playwright-args }}
+          fi
+      - name: Upload Playwright HTML report & traces
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 14

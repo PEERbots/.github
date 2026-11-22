@@ -1,0 +1,22 @@
+# Copy into <repo>/.github/workflows/e2e-preview.yml
+name: E2E QA (Preview)
+
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      preview-url:
+        description: "Preview URL to test"
+        required: true
+        type: string
+
+jobs:
+  e2e:
+    # Fork-PR guard when chained with secret-backed preview deploys
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository
+    uses: PEERbots/.github/.github/workflows/playwright-e2e.yml@main
+    with:
+      base-url: ${{ inputs.preview-url || 'http://localhost:5173' }}
+      playwright-args: "--grep @p0"
+      run-browserstack: false # Set true on qa-real-device PRs once BrowserStack OSS is approved
+    secrets: inherit
