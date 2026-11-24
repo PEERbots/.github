@@ -1,14 +1,15 @@
 # Peerbots Ecosystem Governance
 
-The Peerbots open-source ecosystem is governed by **[Peerbots, Inc.](https://www.peerbots.org/)**, a 501(c)(3) nonprofit organization. Peerbots partners with educators, therapists, researchers, advisors, and community adopters to guide our roadmap.
+The Peerbots open-source ecosystem is governed by **[Peerbots, Inc.](https://www.peerbots.org/)**, a 501(c)(3) research-informed tech nonprofit on a mission to build **social robots for everyone, powered by experts**. Peerbots partners with therapists, educators, librarians, artists, researchers, and disability advisors to guide our roadmap.
 
 ## Guiding Principles
 
-All Peerbots repositories and product decisions follow three core principles:
+All Peerbots repositories and product decisions follow four core principles:
 
-1. **Inclusive, customizable, human-centered design**: Social robots should adapt to diverse learners, clinicians, and families — not the other way around.
-2. **Data privacy and human control by default**: Collect no unnecessary user data, and keep humans firmly in control of robot interactions.
-3. **Research-informed**: Platform design, hardware, and roadmaps are informed by academic research and real-world practice.
+1. **People-first, not AI-first**: Humans — not black-box automations — remain in control of robot interactions. When AI is incorporated, it supports the human expert rather than replacing them.
+2. **Universal Design & neurodiversity-affirming co-design**: By co-designing with therapists, educators, and people with lived experience of disability, we build tools that are universally easy to use, inclusive, and adaptable across fields.
+3. **Data privacy & agency without a profit motive**: Collect no unnecessary user data, avoid vendor lock-in, and keep people in control of their own stories.
+4. **Research-informed — raising the floor**: Collaborate with the academic community to remove high-cost and technical barriers so anyone can build and control social robots from materials they already have.
 
 ## Reviewing Major Proposals
 

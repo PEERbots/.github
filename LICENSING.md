@@ -1,6 +1,6 @@
 # Peerbots Licensing & Trademark Policy
 
-**Peerbots, Inc.** is a 501(c)(3) nonprofit building free, research-informed social robotics tools for educators, therapists, families, researchers, and makers.
+**Peerbots, Inc.** is a 501(c)(3) research-informed tech nonprofit on a mission to build **social robots for everyone, powered by experts**. Peerbots makes it easy to learn about, design, and control social robots that you build from materials you already have.
 
 We believe in being **explicit and transparent** about *why* we chose each license across our ecosystem.
 
@@ -8,11 +8,11 @@ We believe in being **explicit and transparent** about *why* we chose each licen
 
 ## Our Licensing Philosophy
 
-We designed our licensing tiers to balance three goals:
+We build tools without a profit motive so people can keep their privacy, agency, and creative control. Our licensing tiers balance three goals:
 
-1. **Protect our nonprofit mission from closed-source enclosure**: Peerbots is built with community effort, grants, and donations to keep social robotics accessible. Hosted platforms and backends use strong network copyleft (**`AGPL-3.0-or-later`**) so no organization can take our work, host a closed-source paid SaaS competitor, and withhold improvements from the community.
-2. **Make reusable building blocks easy to adopt**: Researchers, universities, and assistive-tech builders should be able to embed our robot face engine and UI components into their own projects without relicensing their entire codebase. Our reusable npm libraries use weak copyleft (**`LGPL-3.0-or-later`**) — embed them freely, and share back improvements to the Peerbots libraries themselves.
-3. **Keep Peerbots financially sustainable without paywalling our mission**: Organizations that want to deploy proprietary hosted Peerbots services or manufacture commercial Moddy hardware can purchase a **commercial license** from Peerbots, Inc., with proceeds funding our free open-source tools and educational mission.
+1. **Protect our nonprofit mission from closed-source enclosure**: Peerbots is built with community effort, grants, and donations to **raise the floor** of social robotics — not to feed proprietary lock-in. Hosted platforms and backends use strong network copyleft (**`AGPL-3.0-or-later`**) so no organization can take our work, host a closed-source paid SaaS competitor, and withhold improvements from the community.
+2. **Make reusable building blocks easy to adopt**: Researchers, universities, educators, and assistive-tech builders should be able to embed our robot face engine and UI components into their own projects without relicensing their entire codebase. Our reusable npm libraries use weak copyleft (**`LGPL-3.0-or-later`**) — embed them freely, and share back improvements to the Peerbots libraries themselves.
+3. **Keep Peerbots financially sustainable without paywalling our mission**: Organizations that need proprietary hosted deployments, commercial Moddy manufacturing, or priority technical support and hands-on training can partner with Peerbots, Inc., with proceeds funding our free open-source tools and educational programs.
 
 ---
 

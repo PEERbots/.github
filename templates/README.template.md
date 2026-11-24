@@ -40,9 +40,10 @@ A clear 2–3 sentence plain-language explanation of what this repository does.
 
 ## Who Is It For?
 
-- **Educators, therapists, parents & practitioners**: How to use it right away without writing code.
-- **Researchers**: How to run studies, customize behaviors, or extend the platform.
-- **Developers & makers**: How to embed packages, self-host, contribute, or build hardware.
+- **Therapists, educators, librarians & parents**: Use the free Peerbots Platform directly — no programming experience required — while staying in full control of what the robot says and does.
+- **Artists, performers & STEAM makers**: Direct interactive art, theatre, and creative robotics projects built from materials you already have.
+- **Researchers**: Run repeatable human-robot interaction (HRI) studies across participants and multiple robot platforms.
+- **Developers**: Embed packages, integrate custom sensors via our API, self-host, or contribute features.
 
 ## Where Can I Use It Already?
 
@@ -80,7 +81,7 @@ npm run dev
 
 ## What Is Peerbots?
 
-[**Peerbots, Inc.**](https://www.peerbots.org) is a **501(c)(3) nonprofit** building free, open-source, research-informed social robotics tools designed to keep humans in control.
+[**Peerbots, Inc.**](https://www.peerbots.org) is a **501(c)(3) research-informed tech nonprofit** on a mission to build **social robots for everyone, powered by experts**. Peerbots makes it easy to learn about, design, and control social robots that you build from materials you already have — taking a people-first, robot-agnostic approach free from profit motives.
 
 `<Project Name>` is part of the broader Peerbots ecosystem — **[explore all Peerbots apps, npm packages, hardware, and trainings on our GitHub organization profile →](https://github.com/PEERbots#the-peerbots-ecosystem)**
 

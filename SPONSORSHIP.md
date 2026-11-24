@@ -1,6 +1,6 @@
 # Supporting & Sponsoring Peerbots
 
-**Peerbots, Inc.** is a registered **501(c)(3) nonprofit organization** (EIN `85-1894594`). Our mission is to keep social robotics free, open-source, research-informed, and human-controlled for educators, therapists, families, researchers, and makers.
+**Peerbots, Inc.** is a registered **501(c)(3) research-informed tech nonprofit** (EIN `85-1894594`). Peerbots makes it easy to learn about, design, and control social robots that you build from materials you already have — keeping social robotics free, people-first, and accessible without a profit motive.
 
 ---
 
@@ -14,20 +14,21 @@ Donations to Peerbots, Inc. are tax-deductible in the United States to the fulle
 ### Suggested Monthly Impact Tiers
 | Tier | Monthly Gift | Impact & Acknowledgment |
 | :--- | :--- | :--- |
-| **Community Supporter** | \$5 – \$25 / mo | Helps keep the Peerbots Platform and Marketplace free for classrooms and families. |
-| **Classroom Champion** | \$50 – \$100 / mo | Funds cloud speech synthesis (TTS), hosting, and free self-paced trainings for educators and therapists. |
+| **Community Supporter** | \$5 – \$25 / mo | Helps keep the free Peerbots Platform and Marketplace running for classrooms, libraries, and families. |
+| **Classroom Champion** | \$50 – \$100 / mo | Funds cloud speech synthesis (TTS), hosting, and free tutorials/curricula for educators and therapists. |
 | **Ecosystem Sponsor** | \$250 – \$1,000+ / mo | Logo acknowledgment on our [GitHub Organization Profile](https://github.com/PEERbots#sponsors--supporters), `peerbots.org`, and major release announcements. |
 
 > **Nonprofit Independence Policy**: Financial sponsorships are charitable acknowledgments, not advertisements, product endorsements, or governance control. All roadmap and technical decisions remain governed by Peerbots' 501(c)(3) mission and [Governance Principles](./GOVERNANCE.md).
 
 ---
 
-## 2. Commercial Software Licensing, Priority Support & Partnerships
+## 2. Commercial Software Licensing, Training, Support & Partnerships
 
-Organizations with specialized operational needs can support Peerbots' mission through:
+Organizations looking for hands-on guidance or specialized deployments can support Peerbots' mission through:
+- **Virtual & In-Person Trainings (Train-the-Trainer)**: Hands-on workshops for educators, therapists, librarians, and artists (including *Getting Started with Controlling Your Robot*, *Robot Interaction Script Writing*, and *Introduction to Social Robotics*).
+- **Priority Technical Support & Custom Implementation Services**: Dedicated onboarding, faster technical support SLAs, and tailored social robot implementations.
 - **Commercial Software Dual-Licensing**: Proprietary hosted deployments of Peerbots code or commercial manufacturing of Moddy 3D-printable hardware *(note: the **Hugo** and **Simple** brand/face assets are **not** available for arbitrary commercial brand licensing — see [`LICENSING.md`](./LICENSING.md))*.
-- **Priority Technical Support & Hands-On Training**: Dedicated onboarding, faster technical support SLAs, and custom workshops for schools, clinics, and labs.
-- **Funded Research & Grant Partnerships**: Collaborative NSF/NIH/foundation-funded social robotics projects.
+- **Funded Research & Grant Partnerships**: Collaborative NSF/NIH/foundation-funded projects pushing accessibility and low-cost social robotics forward.
 
 Contact [support@peerbots.org](mailto:support@peerbots.org?subject=%5BSponsorship%20%2F%20Support%5D%20Inquiry) or [peerbots.org/contact](https://www.peerbots.org/contact).
 
