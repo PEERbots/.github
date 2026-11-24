@@ -1,0 +1,76 @@
+name: OSS Compliance Check
+
+on:
+  workflow_call:
+    inputs:
+      expected-license:
+        description: "Expected SPDX license identifier in package.json (e.g., AGPL-3.0-or-later, LGPL-3.0-or-later, MIT)"
+        required: false
+        type: string
+        default: ""
+      require-dependabot:
+        description: "Whether .github/dependabot.yml must exist"
+        required: false
+        type: boolean
+        default: true
+
+jobs:
+  oss-compliance:
+    name: Verify License, NOTICE & Repo Hygiene
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check LICENSE and NOTICE
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ ! -f LICENSE ]; then
+            echo "::error::Missing root LICENSE file. Copy verbatim from PEERbots/.github/templates/licenses/."
+            exit 1
+          fi
+          if [ ! -f NOTICE ]; then
+            echo "::error::Missing root NOTICE file. Copy from PEERbots/.github/templates/NOTICE.template."
+            exit 1
+          fi
+          if ! grep -qi "Peerbots, Inc." NOTICE; then
+            echo "::error::NOTICE must include 'Peerbots, Inc.' copyright attribution."
+            exit 1
+          fi
+          echo "LICENSE and NOTICE verified."
+
+      - name: Check forbidden files
+        shell: bash
+        run: |
+          set -euo pipefail
+          forbidden=$(git ls-files | grep -E '(^\.env$|^retool-admin-app\.json$|^scratch/)' || true)
+          if [ -n "$forbidden" ]; then
+            echo "::error::Forbidden internal/scratch files tracked in git:"
+            echo "$forbidden"
+            exit 1
+          fi
+          echo "No forbidden files tracked."
+
+      - name: Check package.json license field
+        if: inputs.expected-license != ''
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f package.json ]; then
+            actual=$(node -e "console.log(require('./package.json').license || '')")
+            if [ "$actual" != "${{ inputs.expected-license }}" ]; then
+              echo "::error::package.json license is '$actual', expected '${{ inputs.expected-license }}'."
+              exit 1
+            fi
+            echo "package.json license matches: $actual"
+          fi
+
+      - name: Check dependabot.yml
+        if: inputs.require-dependabot
+        shell: bash
+        run: |
+          if [ ! -f .github/dependabot.yml ]; then
+            echo "::warning::Missing .github/dependabot.yml (copy from PEERbots/.github/templates/dependabot-*.yml)."
+          fi

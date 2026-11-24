@@ -1,0 +1,39 @@
+name: Update Sponsors SVG (SponsorKit)
+
+on:
+  schedule:
+    # Runs daily at 06:00 UTC once SPONSORKIT_GITHUB_TOKEN is configured
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-sponsors:
+    name: Generate assets/sponsors.svg via free MIT SponsorKit
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Run SponsorKit (skipped cleanly until SPONSORKIT_GITHUB_TOKEN is set)
+        env:
+          SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORKIT_GITHUB_TOKEN }}
+          SPONSORKIT_GITHUB_LOGIN: PEERbots
+          SPONSORKIT_GITHUB_TYPE: organization
+        run: |
+          if [ -z "$SPONSORKIT_GITHUB_TOKEN" ]; then
+            echo "SPONSORKIT_GITHUB_TOKEN not configured yet; skipping sponsor SVG refresh."
+            exit 0
+          fi
+          npx -y sponsorkit --dir assets --name sponsors
+      - name: Commit updated sponsors.svg if changed
+        run: |
+          if [ -n "$(git status --porcelain assets/sponsors.svg 2>/dev/null)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/sponsors.svg
+            git commit -m "chore(sponsors): refresh assets/sponsors.svg"
+            git push
+          fi

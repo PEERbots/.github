@@ -1,0 +1,37 @@
+name: Research Idea
+description: Propose a new research question, study, or experiment using Peerbots.
+labels: ["research", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your research suggestion!
+  - type: dropdown
+    id: category
+    attributes:
+      label: Ecosystem Area
+      description: Which part of the Peerbots ecosystem does this research relate to?
+      options:
+        - Peerbots Platform (Controller & Authoring)
+        - Peerbots Face (@peerbots/face)
+        - Marketplace (peerbots-content)
+        - Moddy 3D-Printable Hardware
+        - Conversational Agents (constrained-face-agent)
+        - Trainings & Community
+        - Cross-Repo / General Social Robotics
+    validations:
+      required: true
+  - type: input
+    id: summary
+    attributes:
+      label: Research Question Summary
+      description: A concise summary of the research question.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Research Details & Proposed Experiment
+      description: Describe the motivation, methodology, or platform capabilities needed.
+    validations:
+      required: true

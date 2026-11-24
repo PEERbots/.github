@@ -1,0 +1,51 @@
+name: Canny Changelog Draft
+
+on:
+  workflow_call:
+    inputs:
+      title:
+        description: "User-facing release title (plain English, capability-focused)"
+        required: true
+        type: string
+      details:
+        description: "Markdown body describing user-facing capabilities (no dev jargon)"
+        required: true
+        type: string
+      entry-type:
+        description: "Canny changelog type: new | improved | fixed"
+        required: false
+        type: string
+        default: "improved"
+    secrets:
+      CANNY_API_KEY:
+        required: true
+
+jobs:
+  create-canny-draft:
+    name: Create Canny Changelog Draft (Unpublished)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Post draft entry to Canny API
+        shell: bash
+        env:
+          CANNY_API_KEY: ${{ secrets.CANNY_API_KEY }}
+          ENTRY_TITLE: ${{ inputs.title }}
+          ENTRY_DETAILS: ${{ inputs.details }}
+          ENTRY_TYPE: ${{ inputs.entry-type }}
+        run: |
+          set -euo pipefail
+          payload=$(node -e '
+            console.log(JSON.stringify({
+              apiKey: process.env.CANNY_API_KEY,
+              title: process.env.ENTRY_TITLE,
+              details: process.env.ENTRY_DETAILS,
+              type: process.env.ENTRY_TYPE,
+              published: false
+            }));
+          ')
+          curl -fsSL -X POST "https://canny.io/api/v1/entries/create" \
+            -H "Content-Type: application/json" \
+            -d "$payload"
+          echo "Created unpublished Canny draft for review."

@@ -1,0 +1,13 @@
+# Copy into <repo>/.github/workflows/oss-compliance.yml
+name: OSS Compliance
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  compliance:
+    uses: PEERbots/.github/.github/workflows/oss-compliance.yml@main
+    with:
+      expected-license: "AGPL-3.0-or-later" # Update to LGPL-3.0-or-later or MIT as appropriate

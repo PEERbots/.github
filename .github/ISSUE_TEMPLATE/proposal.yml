@@ -1,0 +1,66 @@
+name: Project Proposal
+description: Propose a new feature or multi-repo project aligned with Peerbots' governance principles.
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your proposal! For early brainstorming or quick feature ideas, consider starting a thread in [Peerbots GitHub Discussions](https://github.com/PEERbots/.github/discussions/categories/ideas) first.
+  - type: dropdown
+    id: category
+    attributes:
+      label: Ecosystem Area
+      description: Which part of the Peerbots ecosystem does this proposal primarily target?
+      options:
+        - Peerbots Platform (Controller & Authoring)
+        - Peerbots Face (@peerbots/face)
+        - Design System (@peerbots/core)
+        - Marketplace (peerbots-content)
+        - Moddy 3D-Printable Hardware
+        - Peerbots API
+        - Trainings & Documentation
+        - Cross-Repo / Multiple Areas
+    validations:
+      required: true
+  - type: input
+    id: summary
+    attributes:
+      label: Proposal Summary
+      description: A concise one-line summary of your idea.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Proposal Details
+      description: Describe the user experience, affected repositories, and proposed design.
+    validations:
+      required: true
+  - type: textarea
+    id: inclusion
+    attributes:
+      label: Inclusion & Customizability
+      description: Does this idea increase inclusion or customizability across the Peerbots ecosystem? If so, how?
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Data Privacy
+      description: What additional user data (if any) would this feature collect?
+    validations:
+      required: true
+  - type: textarea
+    id: human-control
+    attributes:
+      label: Human Control
+      description: What elements of control do people gain or lose due to this feature?
+    validations:
+      required: true
+  - type: textarea
+    id: research
+    attributes:
+      label: Research & Practitioner Basis
+      description: What research or real-world practitioner need supports this feature?
+    validations:
+      required: false
